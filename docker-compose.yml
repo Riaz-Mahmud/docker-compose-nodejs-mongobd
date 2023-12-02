@@ -55,6 +55,13 @@ services:
       - ./www/frontend:/usr/share/nginx/html
     depends_on:
       - backend
+      
+  redis:
+    build: 
+      context: ./bin/redis
+    container_name: "${COMPOSE_PROJECT_NAME}-redis"
+    ports:
+      - "127.0.0.1:${HOST_MACHINE_REDIS_PORT}:6379"
 
 volumes:
   mongo_db: {}

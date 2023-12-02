@@ -49,4 +49,4 @@ Please read from the official docker documentation for more configuration and us
 
 ## License
 
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+The MIT License (MIT). Please see [License File](LICENSE) for more information.
