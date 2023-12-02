@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>Frontend</title>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            // Function to fetch and display data
+            function fetchData() {
+
+                // Make a GET request to fetch data
+                $.ajax({
+                    url: 'http://localhost:3000/<path>',
+                    method: 'GET',
+                    success: function (data) {
+                        console.log(data);
+                    },
+                    error: function (error) {
+                        console.error('Error fetching products:', error.responseText);
+                    }
+                });
+            }
+            // Initial fetch and display of data
+            fetchData();
+        });
+    </script>
+</body>
+
+</html>
