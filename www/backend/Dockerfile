@@ -1,8 +1,7 @@
 FROM node:alpine
 WORKDIR /usr/src/app
 COPY package*.json ./
-RUN npm ci
-RUN npm install cors
+RUN npm install
 COPY ./src ./src
 COPY ./config.js ./
-CMD [ "npm", "start"]
+CMD ["npm", "run", "dev"]

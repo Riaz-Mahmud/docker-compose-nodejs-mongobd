@@ -1,11 +1,11 @@
-# LAMP stack built with Docker Composer for Node.js MongoDB and Nginx
+# LAMP stack built with Docker Composer for Node.js PHP MongoDB MongoExpress Redis
 
 A basic LAMP stack environment built using Docker Compose. It consists of the following:
 
 - NodeJs
 - MongoDB
 - MongoDB Express
-- Nginx
+- PHP
 - Redis
 
 ## Installation
@@ -17,7 +17,7 @@ A basic LAMP stack environment built using Docker Compose. It consists of the fo
 - Run the `docker-compose up -d`.
 
 ```shell
-git clone https://github.com/Riaz-Mahmud/docker-compose-nodejs-mongobd.git
+git clone https://github.com/Riaz-Mahmud/docker-nodejs-mongobd-php-mongoExpress-redis.git
 cd docker-compose-nodejs-mongobd
 // modify .env as needed
 docker compose up -d
@@ -32,7 +32,7 @@ Your project is now ready!! You can access it via `http://localhost`.
 - NodeJs latest
 - MongoDB latest
 - MongoDB Express latest
-- Nginx latest
+- PHP latest
 - Redis latest
 
 You can also change the version of a specific service you want by simply editing the `.env` file at the root of this project and changing the version number of the service you want to use.
